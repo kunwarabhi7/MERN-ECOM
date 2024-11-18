@@ -14,8 +14,8 @@ route.get("/", getAllProduct);
 route.post("/products", addProduct);
 
 //update products
-route.put("/products", updateProduct);
+route.put("/products/:id", updateProduct);
 
 //delete products
-route.delete("/products", deleteProduct);
+route.delete("/products/:id", deleteProduct);
 export default route;
